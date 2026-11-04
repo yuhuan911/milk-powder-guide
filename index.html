@@ -28,6 +28,7 @@
   .tag{display:inline-block;background:#e3f0fb;color:#1565c0;border-radius:12px;padding:1px 8px;font-size:12px;}
   h2{font-size:19px;color:var(--accent);margin:26px 0 12px;border-left:5px solid var(--accent);padding-left:10px;}
   ul{margin:6px 0 6px 20px;font-size:14px;}
+  .rate{color:#f5a623;font-size:15px;letter-spacing:1px;white-space:nowrap;}
   .src{color:var(--muted);font-size:12.5px;margin-top:24px;}
 </style>
 </head>
@@ -50,32 +51,32 @@
 </div>
 
 <table id="tb">
-<thead><tr><th>国家</th><th>品牌</th><th>参考价(元)</th><th>主要适用</th><th>购买便利 / 渠道</th></tr></thead>
+<thead><tr><th>国家</th><th>品牌</th><th>参考价(元)</th><th>主要适用</th><th>购买便利 / 渠道</th><th>推荐指数</th></tr></thead>
 <tbody>
-<tr><td class="ct">德国</td><td>爱他美 Aptamil（白金/普通）</td><td>150–300</td><td>各段通用、贴近母乳、口碑最稳</td><td><span class="tag">极易</span> 考拉/京东国际/天猫国际/德亚/BA药房</td></tr>
-<tr><td class="ct">德国</td><td>喜宝 HiPP（有机）</td><td>150–250</td><td>有机、肠胃较敏感宝宝</td><td><span class="tag">极易</span> 同上</td></tr>
-<tr><td class="ct">德国</td><td>贝唯他 Bebivita</td><td>100–180</td><td>预算有限、性价比</td><td><span class="tag">极易</span> 同上</td></tr>
-<tr><td class="ct">德国</td><td>Holle（有机牛/羊奶）</td><td>200–350</td><td>有机、想要羊奶</td><td><span class="tag">一般</span> iHerb/直邮/代购</td></tr>
-<tr><td class="ct">荷兰</td><td>牛栏 Nutrilon（诺优能）</td><td>150–280</td><td>口味清淡、接近母乳、不易上火</td><td><span class="tag">极易</span> 考拉/京东国际/天猫国际</td></tr>
-<tr><td class="ct">荷兰</td><td>美素 Friso（美素佳儿）</td><td>150–300</td><td>便便好、不上火</td><td><span class="tag">极易</span> 同上</td></tr>
-<tr><td class="ct">荷兰</td><td>佳贝艾特 Kabrita（羊奶）</td><td>250–400</td><td>羊奶、牛奶蛋白不耐/消化弱</td><td><span class="tag">极易</span> 同上</td></tr>
-<tr><td class="ct">澳洲/新西兰</td><td>爱他美（澳洲版 Aptamil 白金）</td><td>150–300</td><td>高端线、配方全面</td><td><span class="tag">极易</span> 考拉/京东国际</td></tr>
-<tr><td class="ct">澳洲</td><td>A2（a2 Milk）</td><td>200–350</td><td>A2 β-酪蛋白、肠胃友好</td><td><span class="tag">极易</span> CW澳洲药房/考拉</td></tr>
-<tr><td class="ct">澳洲</td><td>贝拉米 Bellamy's（有机）</td><td>200–350</td><td>有机、奶源纯净</td><td><span class="tag">极易</span> 考拉/京东国际</td></tr>
-<tr><td class="ct">新西兰</td><td>可瑞康 Karicare（牛/羊）</td><td>150–300</td><td>羊奶出名、性价比</td><td><span class="tag">极易</span> 考拉/京东国际</td></tr>
-<tr><td class="ct">澳洲</td><td>Bubs（羊奶/有机）</td><td>200–350</td><td>羊奶、有机</td><td><span class="tag">一般</span> 直邮/代购</td></tr>
-<tr><td class="ct">英国</td><td>牛栏 Cow&amp;Gate</td><td>120–250</td><td>性价比、口味清淡</td><td><span class="tag">极易</span> 英亚/考拉</td></tr>
-<tr><td class="ct">英国</td><td>爱他美（英版）</td><td>150–280</td><td>与德版近似、价格常更低</td><td><span class="tag">极易</span> 英亚/考拉</td></tr>
-<tr><td class="ct">英国</td><td>惠氏 SMA</td><td>150–280</td><td>均衡、老牌</td><td><span class="tag">一般</span> 英亚/直邮</td></tr>
-<tr><td class="ct">丹麦</td><td>阿拉 Arla（宝贝与我 有机）</td><td>150–300</td><td>有机、丹麦奶源、清淡</td><td><span class="tag">极易</span> 考拉/京东国际</td></tr>
-<tr><td class="ct">法国</td><td>伴宝乐 Babybio（有机）</td><td>200–350</td><td>有机、法式配方</td><td><span class="tag">一般</span> 法亚/直邮</td></tr>
-<tr><td class="ct">法国</td><td>古戈氏 Guigoz / 贝乐蒂 Bledina</td><td>150–280</td><td>日常、温和</td><td><span class="tag">一般</span> 法亚/直邮</td></tr>
-<tr><td class="ct">瑞士</td><td>雀巢 NAN（能恩/超级能恩）</td><td>150–350</td><td>部分水解、过敏预防、渠道最广</td><td><span class="tag">极易</span> 各平台均有</td></tr>
-<tr><td class="ct">瑞士</td><td>Bimbosan 宾博</td><td>150–300</td><td>温和、草本/有机线</td><td><span class="tag">一般</span> 直邮/代购</td></tr>
-<tr><td class="ct">爱尔兰</td><td>惠氏 启赋 Illuma / S-26</td><td>200–400</td><td>高端（OPO 结构脂、贴近母乳脂肪）</td><td><span class="tag">极易</span> 考拉/京东国际</td></tr>
-<tr><td class="ct">美国</td><td>雅培 Similac</td><td>150–350</td><td>部分水解/防过敏、DHA</td><td><span class="tag">极易</span> iHerb/美亚/考拉</td></tr>
-<tr><td class="ct">美国</td><td>美赞臣 Enfamil</td><td>150–350</td><td>DHA/脑部发育、高端线多</td><td><span class="tag">极易</span> iHerb/美亚/考拉</td></tr>
-<tr><td class="ct">瑞典</td><td>森宝 Semper</td><td>150–300</td><td>北欧奶源、清淡</td><td><span class="tag">一般</span> 代购/直邮</td></tr>
+<tr><td class="ct">德国</td><td>爱他美 Aptamil（白金/普通）</td><td>150–300</td><td>各段通用、贴近母乳、口碑最稳</td><td><span class="tag">极易</span> 考拉/京东国际/天猫国际/德亚/BA药房</td><td class="rate">★★★★★</td></tr>
+<tr><td class="ct">德国</td><td>喜宝 HiPP（有机）</td><td>150–250</td><td>有机、肠胃较敏感宝宝</td><td><span class="tag">极易</span> 同上</td><td class="rate">★★★★☆</td></tr>
+<tr><td class="ct">德国</td><td>贝唯他 Bebivita</td><td>100–180</td><td>预算有限、性价比</td><td><span class="tag">极易</span> 同上</td><td class="rate">★★★☆☆</td></tr>
+<tr><td class="ct">德国</td><td>Holle（有机牛/羊奶）</td><td>200–350</td><td>有机、想要羊奶</td><td><span class="tag">一般</span> iHerb/直邮/代购</td><td class="rate">★★★★☆</td></tr>
+<tr><td class="ct">荷兰</td><td>牛栏 Nutrilon（诺优能）</td><td>150–280</td><td>口味清淡、接近母乳、不易上火</td><td><span class="tag">极易</span> 考拉/京东国际/天猫国际</td><td class="rate">★★★★☆</td></tr>
+<tr><td class="ct">荷兰</td><td>美素 Friso（美素佳儿）</td><td>150–300</td><td>便便好、不上火</td><td><span class="tag">极易</span> 同上</td><td class="rate">★★★★☆</td></tr>
+<tr><td class="ct">荷兰</td><td>佳贝艾特 Kabrita（羊奶）</td><td>250–400</td><td>羊奶、牛奶蛋白不耐/消化弱</td><td><span class="tag">极易</span> 同上</td><td class="rate">★★★★☆</td></tr>
+<tr><td class="ct">澳洲/新西兰</td><td>爱他美（澳洲版 Aptamil 白金）</td><td>150–300</td><td>高端线、配方全面</td><td><span class="tag">极易</span> 考拉/京东国际</td><td class="rate">★★★★★</td></tr>
+<tr><td class="ct">澳洲</td><td>A2（a2 Milk）</td><td>200–350</td><td>A2 β-酪蛋白、肠胃友好</td><td><span class="tag">极易</span> CW澳洲药房/考拉</td><td class="rate">★★★★☆</td></tr>
+<tr><td class="ct">澳洲</td><td>贝拉米 Bellamy's（有机）</td><td>200–350</td><td>有机、奶源纯净</td><td><span class="tag">极易</span> 考拉/京东国际</td><td class="rate">★★★★☆</td></tr>
+<tr><td class="ct">新西兰</td><td>可瑞康 Karicare（牛/羊）</td><td>150–300</td><td>羊奶出名、性价比</td><td><span class="tag">极易</span> 考拉/京东国际</td><td class="rate">★★★★☆</td></tr>
+<tr><td class="ct">澳洲</td><td>Bubs（羊奶/有机）</td><td>200–350</td><td>羊奶、有机</td><td><span class="tag">一般</span> 直邮/代购</td><td class="rate">★★★☆☆</td></tr>
+<tr><td class="ct">英国</td><td>牛栏 Cow&amp;Gate</td><td>120–250</td><td>性价比、口味清淡</td><td><span class="tag">极易</span> 英亚/考拉</td><td class="rate">★★★★☆</td></tr>
+<tr><td class="ct">英国</td><td>爱他美（英版）</td><td>150–280</td><td>与德版近似、价格常更低</td><td><span class="tag">极易</span> 英亚/考拉</td><td class="rate">★★★★☆</td></tr>
+<tr><td class="ct">英国</td><td>惠氏 SMA</td><td>150–280</td><td>均衡、老牌</td><td><span class="tag">一般</span> 英亚/直邮</td><td class="rate">★★★☆☆</td></tr>
+<tr><td class="ct">丹麦</td><td>阿拉 Arla（宝贝与我 有机）</td><td>150–300</td><td>有机、丹麦奶源、清淡</td><td><span class="tag">极易</span> 考拉/京东国际</td><td class="rate">★★★★☆</td></tr>
+<tr><td class="ct">法国</td><td>伴宝乐 Babybio（有机）</td><td>200–350</td><td>有机、法式配方</td><td><span class="tag">一般</span> 法亚/直邮</td><td class="rate">★★★☆☆</td></tr>
+<tr><td class="ct">法国</td><td>古戈氏 Guigoz / 贝乐蒂 Bledina</td><td>150–280</td><td>日常、温和</td><td><span class="tag">一般</span> 法亚/直邮</td><td class="rate">★★★☆☆</td></tr>
+<tr><td class="ct">瑞士</td><td>雀巢 NAN（能恩/超级能恩）</td><td>150–350</td><td>部分水解、过敏预防、渠道最广</td><td><span class="tag">极易</span> 各平台均有</td><td class="rate">★★★★☆</td></tr>
+<tr><td class="ct">瑞士</td><td>Bimbosan 宾博</td><td>150–300</td><td>温和、草本/有机线</td><td><span class="tag">一般</span> 直邮/代购</td><td class="rate">★★★☆☆</td></tr>
+<tr><td class="ct">爱尔兰</td><td>惠氏 启赋 Illuma / S-26</td><td>200–400</td><td>高端（OPO 结构脂、贴近母乳脂肪）</td><td><span class="tag">极易</span> 考拉/京东国际</td><td class="rate">★★★★★</td></tr>
+<tr><td class="ct">美国</td><td>雅培 Similac</td><td>150–350</td><td>部分水解/防过敏、DHA</td><td><span class="tag">极易</span> iHerb/美亚/考拉</td><td class="rate">★★★★☆</td></tr>
+<tr><td class="ct">美国</td><td>美赞臣 Enfamil</td><td>150–350</td><td>DHA/脑部发育、高端线多</td><td><span class="tag">极易</span> iHerb/美亚/考拉</td><td class="rate">★★★★☆</td></tr>
+<tr><td class="ct">瑞典</td><td>森宝 Semper</td><td>150–300</td><td>北欧奶源、清淡</td><td><span class="tag">一般</span> 代购/直邮</td><td class="rate">★★★☆☆</td></tr>
 </tbody>
 </table>
 
